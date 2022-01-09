@@ -1,0 +1,24 @@
+.ProgressBar {
+  margin: 0 auto;
+}
+
+.ProgressBar[value] {
+  appearance: none;
+  width: 100%;
+  height: 0.5rem;
+
+  &::-webkit-progress-bar {
+    border-radius: 0.5rem;
+    background-color: var(--grey-10);
+  }
+
+  &::-webkit-progress-value {
+    border-radius: 0.5rem;
+    background-color: var(--brand-blue);
+    transition: 250ms width ease-in-out;
+  }
+
+  @media (max-width: 414px) {
+    width: 90%;
+  }
+}

@@ -1,11 +1,6 @@
 .header {
-  // border: red solid 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  &-date {
-    align-self: flex-end;
-  }
+  display: grid;
+  width: 100%;
+  grid-row-gap: 1rem;
   
 }
